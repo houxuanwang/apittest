@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/'" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/.gitignore" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/.venv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/__init__.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ai" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/allure-report" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/allure-results" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pytest.ini" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/run_cases_ai.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentry-sdk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shuke_api_autotest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/venv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/任务管理.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/接口文档接口示例.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/测试.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/话术.md" charset="UTF-8" />
+  </component>
+</project>
