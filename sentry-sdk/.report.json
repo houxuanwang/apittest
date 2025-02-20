@@ -1,0 +1,112 @@
+{
+    "created": 1669615275.2669892,
+    "duration": 0.9380025863647461,
+    "exitcode": 0,
+    "root": "C:\\Users\\wanghouxuan-jk\\PycharmProjects\\1\\sentry-sdk",
+    "environment": {
+        "Python": "3.9.4",
+        "Platform": "Windows-10-10.0.18362-SP0",
+        "Packages": {
+            "pytest": "6.2.5",
+            "py": "1.10.0",
+            "pluggy": "0.13.1"
+        },
+        "Plugins": {
+            "allure-pytest": "2.8.13",
+            "forked": "1.3.0",
+            "html": "2.1.1",
+            "json-report": "1.2.1",
+            "metadata": "1.8.0",
+            "ordering": "0.6",
+            "rerunfailures": "9.1.1",
+            "xdist": "2.5.0"
+        },
+        "JAVA_HOME": "C:\\Program Files\\Java\\jdk1.8.0_152"
+    },
+    "summary": {
+        "passed": 1,
+        "total": 1,
+        "collected": 1
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_2.py::test_2",
+                    "type": "Function",
+                    "lineno": 4
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_2.py::test_2",
+            "lineno": 4,
+            "outcome": "passed",
+            "keywords": [
+                "test_2",
+                "pytestmark",
+                "sentry-sdk",
+                "test_2.py",
+                "L0"
+            ],
+            "setup": {
+                "duration": 0.4294157999999999,
+                "outcome": "passed",
+                "stdout": "123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123\nhttps://wecom-msg.360-jr.com/message/business/user/login\n"
+            },
+            "call": {
+                "duration": 0.43111639999999984,
+                "outcome": "passed",
+                "stdout": "__name__\napi_request\n__name__\napi_request\na\u7684\u7c7b\u578b\u662f\uff1a<class 'api_request.ApiRequest'>\nTrue\nb\u7684\u7c7b\u578b\u662f\uff1a<class 'api_request.Response'>\nFalse\nc\u7684\u7c7b\u578b\u662f\uff1a<class 'int'>\nFalse\n",
+                "log": [
+                    {
+                        "name": "api_request",
+                        "msg": "json\u6570\u636e\u83b7\u53d6\u5931\u8d25\uff0c\u4f7f\u7528r.text\u5c5e\u6027!:Expecting value: line 1 column 1 (char 0)",
+                        "args": null,
+                        "levelname": "WARNING",
+                        "levelno": 30,
+                        "pathname": "C:\\Users\\wanghouxuan-jk\\PycharmProjects\\1\\sentry-sdk\\api_request.py",
+                        "filename": "api_request.py",
+                        "module": "api_request",
+                        "exc_info": null,
+                        "exc_text": null,
+                        "stack_info": null,
+                        "lineno": 53,
+                        "funcName": "__call__",
+                        "created": 1669615275.1959867,
+                        "msecs": 195.98674774169922,
+                        "relativeCreated": 1842.003345489502,
+                        "thread": 47484,
+                        "threadName": "MainThread",
+                        "processName": "MainProcess",
+                        "process": 44260
+                    }
+                ]
+            },
+            "teardown": {
+                "duration": 0.001507499999999773,
+                "outcome": "passed"
+            }
+        }
+    ],
+    "warnings": [
+        {
+            "message": "Unverified HTTPS request is being made to host 'zkxms-test.360-jr.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings",
+            "category": "InsecureRequestWarning",
+            "when": "runtest",
+            "filename": "C:\\Users\\wanghouxuan-jk\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\urllib3\\connectionpool.py",
+            "lineno": 981
+        },
+        {
+            "message": "Unverified HTTPS request is being made to host 'www.baidu.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings",
+            "category": "InsecureRequestWarning",
+            "when": "runtest",
+            "filename": "C:\\Users\\wanghouxuan-jk\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\urllib3\\connectionpool.py",
+            "lineno": 981
+        }
+    ]
+}
