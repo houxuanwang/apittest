@@ -1,0 +1,61 @@
+disable_existing_loggers: 0
+version: 1
+formatters:
+  precise:
+      format: "[%(asctime)s] %(process)d %(thread)d {%(name)s} %(levelname)s [%(module)s:%(lineno)s:%(funcName)s] %(message)s"
+
+handlers:
+  console:
+      class: logging.StreamHandler
+      level: INFO
+      formatter: precise
+      stream: ext://sys.stdout
+
+  file:
+      class: logging.handlers.RotatingFileHandler
+      filename: logs/sanliuling.log
+      formatter: precise
+      level: INFO
+      maxBytes: 52428800 # 50MB
+      backupCount: 20
+      encoding: utf8
+
+  file_err:
+      class: logging.handlers.RotatingFileHandler
+      filename: logs/sanliuling-error.log
+      formatter: precise
+      level: WARNING
+#      level: ERROR
+      maxBytes: 52428800 # 50MB
+      backupCount: 20
+      encoding: utf8
+
+loggers:
+    sanliuling:
+      level: INFO
+      handlers: [console, file, file_err]
+      propagate: 0
+    pytest:
+      level: DEBUG
+      handlers: [console, file, file_err]
+      propagate: 1 #默认是为1，表示消息将会传递给父级logger的handler，通常其值为0
+    selenium:
+      level: ERROR
+      handlers: [console, file, file_err]
+      propagate: 0
+    urllib3:
+      level: ERROR
+      handlers: [console, file, file_err]
+      propagate: 0
+    requests:
+      level: INFO
+      handlers: [console, file, file_err]
+      propagate: 0
+    __main__:
+      level: INFO
+      handlers: [console, file, file_err]
+      propagate: 0
+
+root:
+    level: INFO
+    handlers: [console, file, file_err]
