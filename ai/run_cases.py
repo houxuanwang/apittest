@@ -19,9 +19,12 @@ if __name__ == '__main__':
 
     # 执行pytest单元测试，生成 Allure 报告需要的数据存在 /temp 目录
     #pytest_args = ['--alluredir', '../allure-results', '-m', 'L4 or L0 or L1 or L2 or L3']
-    pytest_args = ['--alluredir', '../allure-results', "-vs", "../ai"]
+    #pytest_args = ['--alluredir', '../allure-results', "../ai"]
 
-    pytest.main(pytest_args)
+
+    pytest.main(['-s', '-v', '../ai/', '-q', '--alluredir', '../allure-results'])
+
+    #pytest.main(pytest_args)
 
     # 执行命令 allure generate ./temp -o ./report --clean ，生成测试报告
     os.system('allure generate ../allure-results -o ../allure-report --clean')
