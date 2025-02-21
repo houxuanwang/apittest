@@ -13,7 +13,7 @@ handlers:
 
   file:
       class: logging.handlers.RotatingFileHandler
-      filename: logs/sanliuling.log
+      filename: ai/logs/sanliuling.log
       formatter: precise
       level: INFO
       maxBytes: 52428800 # 50MB
@@ -22,7 +22,7 @@ handlers:
 
   file_err:
       class: logging.handlers.RotatingFileHandler
-      filename: logs/sanliuling-error.log
+      filename: ai/logs/sanliuling-error.log
       formatter: precise
       level: WARNING
 #      level: ERROR
