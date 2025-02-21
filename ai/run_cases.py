@@ -22,7 +22,8 @@ if __name__ == '__main__':
     #pytest_args = ['--alluredir', '../allure-results', "../ai"]
 
 
-    pytest.main(['-s', '-v', '../ai/', '-q', '--alluredir', '../allure-results'])
+    pytest.main(['-s', '-v', 'ai/', '-q', '--alluredir', '../allure-results'])
+
 
     #pytest.main(pytest_args)
 
